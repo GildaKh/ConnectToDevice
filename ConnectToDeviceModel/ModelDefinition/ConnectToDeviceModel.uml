@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="956bc089-f6a0-485d-9477-ca1e58df6874"
+  name="ConnectToDeviceModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1c7f9a3c-f4cf-41fa-adcc-9b831230fcd9"
+        name="abstract BaseChannel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="20856daf-af15-4b12-8947-31d3f9404942"
+        name="NetworkChannel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="38e1c872-cb8c-408f-acd5-e4c74a6000ae"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1c7f9a3c-f4cf-41fa-adcc-9b831230fcd9"
+              LastKnownName="abstract BaseChannel"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eaa018bc-c464-415b-8878-645d6b60681f"
+        name="SerialChannel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3fd0e44b-2f37-4948-840e-bc3aac1984b1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1c7f9a3c-f4cf-41fa-adcc-9b831230fcd9"
+              LastKnownName="abstract BaseChannel"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0b9001e0-301f-4a50-b7ef-baf42003d316"
+        name="abstract ManualTimer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6b753173-9e0c-47ec-8e5a-ea6f107343ad"
+        name="ManualTimerAsync"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="108933b1-bd7f-40e4-bcfa-376a3d8e202f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0b9001e0-301f-4a50-b7ef-baf42003d316"
+              LastKnownName="abstract ManualTimer"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9c4975df-ac1b-4c91-a89a-c5d1f020f5ed"
+        name="ManualTimerSync"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="37981df4-52d6-43f7-ba09-eb50f7f236fd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0b9001e0-301f-4a50-b7ef-baf42003d316"
+              LastKnownName="abstract ManualTimer"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f5b5db99-d123-434a-9a0d-6af324ca7f52"
+        name="abstract TypePackager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad15af5c-c3a3-4389-95b1-2ba34f661927"
+        name="ILNUMBER"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ca22fcd1-ed16-4895-a936-95f3299e85cb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f5b5db99-d123-434a-9a0d-6af324ca7f52"
+              LastKnownName="abstract TypePackager"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f91f4b68-6612-4cf2-ad5a-f8c232c4b1c8"
+        name="ILPASSWORD"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5a18fd15-cfb4-4cf9-b63a-d9513e4712cb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f5b5db99-d123-434a-9a0d-6af324ca7f52"
+              LastKnownName="abstract TypePackager"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04c6fe5c-7796-4b1f-adca-c1fd005c68dd"
+        name="LLCHAR"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8074ba05-9e2c-4818-8678-75b3dc189394"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f5b5db99-d123-434a-9a0d-6af324ca7f52"
+              LastKnownName="abstract TypePackager"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="639da4c4-0127-456d-b961-082199c66313"
+        name="IReceivedData"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2b840820-e554-4bda-9b3d-a2b025313131"
+        name="ReceivedData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5106f6dd-126b-4067-babc-1fb4c545418c">
+            <interfaceMoniker
+              Id="639da4c4-0127-456d-b961-082199c66313"
+              LastKnownName="IReceivedData"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="73d2a1e9-c3a3-4fcd-8827-af3971c6414c"
+        name="IPersonnel"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="be5e69d5-9ca1-4b0d-ad66-d900d0c20a02">
+            <classMoniker
+              Id="04c6fe5c-7796-4b1f-adca-c1fd005c68dd"
+              LastKnownName="LLCHAR"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </dependency>
+          <dependency
+            Id="692bb1bc-c339-4a65-9727-7803c52d0988">
+            <classMoniker
+              Id="f91f4b68-6612-4cf2-ad5a-f8c232c4b1c8"
+              LastKnownName="ILPASSWORD"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </dependency>
+          <dependency
+            Id="e59c2af0-2229-443f-b798-039232075fa7">
+            <classMoniker
+              Id="ad15af5c-c3a3-4389-95b1-2ba34f661927"
+              LastKnownName="ILNUMBER"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0469dd1a-79d6-411e-92e4-2647d79d82ac"
+        name="SendData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="41bd3a3f-d8b7-4b77-97e0-24bd2760b265">
+            <interfaceMoniker
+              Id="73d2a1e9-c3a3-4fcd-8827-af3971c6414c"
+              LastKnownName="IPersonnel"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="579531c2-d35f-498c-89b6-000c895f3b33"
+        name="IChannel"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="19f86f98-9daa-4eb4-b99c-9f0ebd9d0f17"
+            isDerived="false"
+            sourceEndRoleName="IChannel"
+            targetEndRoleName="abstract BaseChannel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1c7f9a3c-f4cf-41fa-adcc-9b831230fcd9"
+              LastKnownName="abstract BaseChannel"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bacc222c-4d8b-4be6-a925-0e9a503e495d"
+                  name="IChannel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3ae2bdbd-74ee-4956-af4d-63cd7ab2861e"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ad1e16a0-b88d-4f9a-a3f3-cf0e6856a4d0"
+                      name="Upper"
+                      value="0" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb587581-24d0-46c4-b579-f964b81f0af8"
+                  name="abstract BaseChannel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c79e43c9-03e9-4fe2-80d5-398ad2a06a39"
+        name="SendDataManagment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="434493c7-4bed-4334-a49e-47c508805521">
+            <interfaceMoniker
+              Id="579531c2-d35f-498c-89b6-000c895f3b33"
+              LastKnownName="IChannel"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="6be5ed95-c018-468b-a92e-3ccff69228eb">
+            <interfaceMoniker
+              Id="73d2a1e9-c3a3-4fcd-8827-af3971c6414c"
+              LastKnownName="IPersonnel"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </dependency>
+          <dependency
+            Id="a22fda10-83f6-46fe-a680-956bc9b3f5ee">
+            <interfaceMoniker
+              Id="639da4c4-0127-456d-b961-082199c66313"
+              LastKnownName="IReceivedData"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="12ac9ad8-f7d7-4e12-8ce3-ef13995fd4d5"
+            isDerived="false"
+            sourceEndRoleName="SendDataManagment"
+            targetEndRoleName="abstract ManualTimer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0b9001e0-301f-4a50-b7ef-baf42003d316"
+              LastKnownName="abstract ManualTimer"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb4caae1-f342-44e5-999d-e12c9e7d987c"
+                  name="SendDataManagment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a961e6d8-5f75-493b-94ef-883d806c8259"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="31470915-b972-4d2e-b532-fdbf999e5f0f"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71c8fe7b-269b-4e42-999c-1d49f05bc6fb"
+                  name="abstract ManualTimer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2f4c2e4d-3f86-477f-b988-fc9c864564ca"
+            isDerived="false"
+            sourceEndRoleName="SendDataManagment"
+            targetEndRoleName="ReceivedData"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2b840820-e554-4bda-9b3d-a2b025313131"
+              LastKnownName="ReceivedData"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bdbda03b-f574-4275-945e-a4ffdf08e84b"
+                  name="SendDataManagment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f0ab600e-ea0d-4bb3-9389-7b4598cf052c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6d59ed34-40d1-46f7-abe5-c9431db3dca2"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa29f102-baeb-4494-b803-b74f13309326"
+                  name="ReceivedData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ebe7be4a-2506-4407-9483-5e470273efbc"
+        name="ConnectToDeviceApi"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="da4f33c2-9d58-4abd-9077-5a0be9840959"
+            isDerived="false"
+            sourceEndRoleName="ConnectToDeviceApi"
+            targetEndRoleName="SendDataManagment"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c79e43c9-03e9-4fe2-80d5-398ad2a06a39"
+              LastKnownName="SendDataManagment"
+              LastKnownLocation="ConnectToDeviceModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5057acdf-c431-43e5-80c1-d65860ff4037"
+                  name="ConnectToDeviceApi"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b058d42e-8d14-4c8d-a7a8-ee57de11b757"
+                  name="SendDataManagment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="09a4b823-2021-4366-9254-0dfbe00621d0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5744b0fc-b95c-46d6-a602-0173af3668df"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

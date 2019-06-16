@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="67164707-78cd-4c67-9ef6-b3872b77213a" name="CTO" linkedPackageId="0c6e64d7-3715-46f8-88dd-e41b0537c3d3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6c294b65-65e7-45d4-8bd6-72ad8005bfa1">
+      <profileInstance Id="2af99127-3c0b-4d8b-a405-4f97d8f710d5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4a31cb43-3636-4d9e-8c98-a60e0bb42118">
+      <profileInstance Id="e5f890a7-b6e2-4a1f-893a-8137025edae0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ec91e8fd-82cf-4b0a-a18b-08b056c7c2d8" name="abstract BaseChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1c7f9a3c-f4cf-41fa-adcc-9b831230fcd9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6c5fcfde-28e3-42f6-8609-9efa3696612b" name="NetworkChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="20856daf-af15-4b12-8947-31d3f9404942" />
+        <generalsInternal>
+          <generalization Id="85246d10-ecde-489c-a85d-6690d57839f1" isSubstitutable="false">
+            <classMoniker Id="ec91e8fd-82cf-4b0a-a18b-08b056c7c2d8" LastKnownName="abstract BaseChannel" />
+            <elementDefinition Id="38e1c872-cb8c-408f-acd5-e4c74a6000ae" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dc56fb21-6c68-4d97-a4e4-85f30b52b057" name="SerialChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eaa018bc-c464-415b-8878-645d6b60681f" />
+        <generalsInternal>
+          <generalization Id="97b87928-6839-420f-ac62-fd31ca60efd9" isSubstitutable="false">
+            <classMoniker Id="ec91e8fd-82cf-4b0a-a18b-08b056c7c2d8" LastKnownName="abstract BaseChannel" />
+            <elementDefinition Id="3fd0e44b-2f37-4948-840e-bc3aac1984b1" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aedc5679-1f1f-46d2-ac4b-c0a95bcf11e7" name="abstract ManualTimer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0b9001e0-301f-4a50-b7ef-baf42003d316" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="30a1bd3b-bb31-4cd9-8f99-57fd88883a00" name="ManualTimerAsync" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6b753173-9e0c-47ec-8e5a-ea6f107343ad" />
+        <generalsInternal>
+          <generalization Id="9b1627b5-5e2b-4135-b861-7b6bd7e7857c" isSubstitutable="false">
+            <classMoniker Id="aedc5679-1f1f-46d2-ac4b-c0a95bcf11e7" LastKnownName="abstract ManualTimer" />
+            <elementDefinition Id="108933b1-bd7f-40e4-bcfa-376a3d8e202f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4abb3f53-223f-4cf1-b934-4f2cbe90c699" name="ManualTimerSync" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9c4975df-ac1b-4c91-a89a-c5d1f020f5ed" />
+        <generalsInternal>
+          <generalization Id="89e536e1-a7de-41af-b056-99b9c660426a" isSubstitutable="false">
+            <classMoniker Id="aedc5679-1f1f-46d2-ac4b-c0a95bcf11e7" LastKnownName="abstract ManualTimer" />
+            <elementDefinition Id="37981df4-52d6-43f7-ba09-eb50f7f236fd" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="84120ba2-45c9-421d-9e70-655ef8c7500b" name="abstract TypePackager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f5b5db99-d123-434a-9a0d-6af324ca7f52" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="188b9310-645d-4d4d-af74-8a82ec44c109" name="ILNUMBER" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad15af5c-c3a3-4389-95b1-2ba34f661927" />
+        <generalsInternal>
+          <generalization Id="862d1e7e-2c21-4019-91a1-944ba4a7f0e7" isSubstitutable="false">
+            <classMoniker Id="84120ba2-45c9-421d-9e70-655ef8c7500b" LastKnownName="abstract TypePackager" />
+            <elementDefinition Id="ca22fcd1-ed16-4895-a936-95f3299e85cb" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="98ddf18a-596e-4a4d-b9ea-ca2f2b5da64a" name="ILPASSWORD" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f91f4b68-6612-4cf2-ad5a-f8c232c4b1c8" />
+        <generalsInternal>
+          <generalization Id="e6e8eb48-6f69-45cc-a18c-7f93f589dbf1" isSubstitutable="false">
+            <classMoniker Id="84120ba2-45c9-421d-9e70-655ef8c7500b" LastKnownName="abstract TypePackager" />
+            <elementDefinition Id="5a18fd15-cfb4-4cf9-b63a-d9513e4712cb" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cf742458-c0e2-48cf-9142-95f5440a771f" name="LLCHAR" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="04c6fe5c-7796-4b1f-adca-c1fd005c68dd" />
+        <generalsInternal>
+          <generalization Id="7deb2bfd-2cb0-4bec-a069-d43951c21238" isSubstitutable="false">
+            <classMoniker Id="84120ba2-45c9-421d-9e70-655ef8c7500b" LastKnownName="abstract TypePackager" />
+            <elementDefinition Id="8074ba05-9e2c-4818-8678-75b3dc189394" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="7932e0d1-9cfa-43b3-ac0b-8e6817428c59" name="IReceivedData" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="639da4c4-0127-456d-b961-082199c66313" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4d72cf26-7068-4d9d-93e9-b18c356fa241" name="ReceivedData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2b840820-e554-4bda-9b3d-a2b025313131" />
+        <suppliersInternal>
+          <interfaceRealization Id="230ae6ec-566a-4de9-8fdc-75061c30971e">
+            <interfaceMoniker Id="7932e0d1-9cfa-43b3-ac0b-8e6817428c59" LastKnownName="IReceivedData" />
+            <elementDefinition Id="5106f6dd-126b-4067-babc-1fb4c545418c" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="12b86fcd-a63c-4b98-ab59-9acd9e1ab4a3" name="IPersonnel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73d2a1e9-c3a3-4fcd-8827-af3971c6414c" />
+        <suppliersInternal>
+          <dependency Id="e5bc89bc-d44f-4cb7-bf8e-146021ad11d8">
+            <classMoniker Id="cf742458-c0e2-48cf-9142-95f5440a771f" LastKnownName="LLCHAR" />
+            <elementDefinition Id="be5e69d5-9ca1-4b0d-ad66-d900d0c20a02" />
+          </dependency>
+          <dependency Id="94af7142-6f86-4086-b90b-a8631673f437">
+            <classMoniker Id="98ddf18a-596e-4a4d-b9ea-ca2f2b5da64a" LastKnownName="ILPASSWORD" />
+            <elementDefinition Id="692bb1bc-c339-4a65-9727-7803c52d0988" />
+          </dependency>
+          <dependency Id="8ab82455-c4b6-4a0a-8f12-778ef22af8fd">
+            <classMoniker Id="188b9310-645d-4d4d-af74-8a82ec44c109" LastKnownName="ILNUMBER" />
+            <elementDefinition Id="e59c2af0-2229-443f-b798-039232075fa7" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6af8e416-4101-4fd8-82da-8e355899379c" name="SendData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0469dd1a-79d6-411e-92e4-2647d79d82ac" />
+        <suppliersInternal>
+          <interfaceRealization Id="23a5a7fd-ce1c-4cb3-be34-f9fffa5b7922">
+            <interfaceMoniker Id="12b86fcd-a63c-4b98-ab59-9acd9e1ab4a3" LastKnownName="IPersonnel" />
+            <elementDefinition Id="41bd3a3f-d8b7-4b77-97e0-24bd2760b265" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="782f8150-0d5f-4400-9422-8a08864eec8d" name="IChannel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="579531c2-d35f-498c-89b6-000c895f3b33" />
+        <targetEnds>
+          <association Id="9ae18b44-5f74-4cd0-a5d9-c64a64b1d5d4" isDerived="false" sourceEndRoleName="IChannel" targetEndRoleName="abstract BaseChannel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ec91e8fd-82cf-4b0a-a18b-08b056c7c2d8" LastKnownName="abstract BaseChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="494dcc24-0c00-42e0-92cd-96ed02e31dd6" name="IChannel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="30ee9c33-1689-4721-9534-add969c0cf59" name="Lower" value="0">
+                      <elementDefinition Id="3ae2bdbd-74ee-4956-af4d-63cd7ab2861e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="05876a62-3a67-438f-b45b-68f33223c2bd" name="Upper" value="0">
+                      <elementDefinition Id="ad1e16a0-b88d-4f9a-a3f3-cf0e6856a4d0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bacc222c-4d8b-4be6-a925-0e9a503e495d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e0a12db-94f6-459a-94b0-6739704909a2" name="abstract BaseChannel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb587581-24d0-46c4-b579-f964b81f0af8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="19f86f98-9daa-4eb4-b99c-9f0ebd9d0f17" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e583262a-8ad9-422b-b792-b41f33f3153d" name="SendDataManagment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c79e43c9-03e9-4fe2-80d5-398ad2a06a39" />
+        <suppliersInternal>
+          <interfaceRealization Id="5a6c7031-d649-40a8-839b-ae7408f1fea6">
+            <interfaceMoniker Id="782f8150-0d5f-4400-9422-8a08864eec8d" LastKnownName="IChannel" />
+            <elementDefinition Id="434493c7-4bed-4334-a49e-47c508805521" />
+          </interfaceRealization>
+          <dependency Id="29469999-5652-411b-a368-020deb6f96f3">
+            <interfaceMoniker Id="12b86fcd-a63c-4b98-ab59-9acd9e1ab4a3" LastKnownName="IPersonnel" />
+            <elementDefinition Id="6be5ed95-c018-468b-a92e-3ccff69228eb" />
+          </dependency>
+          <dependency Id="c8582c86-e0d0-4f0d-9899-566a35b93a22">
+            <interfaceMoniker Id="7932e0d1-9cfa-43b3-ac0b-8e6817428c59" LastKnownName="IReceivedData" />
+            <elementDefinition Id="a22fda10-83f6-46fe-a680-956bc9b3f5ee" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="e4a9d4d7-0920-4ebc-8945-ae02bfd131ac" isDerived="false" sourceEndRoleName="SendDataManagment" targetEndRoleName="abstract ManualTimer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aedc5679-1f1f-46d2-ac4b-c0a95bcf11e7" LastKnownName="abstract ManualTimer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4037121d-8c14-43d3-89ab-403ae243a2b8" name="SendDataManagment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="9c12caca-67ca-4bca-a06a-8792514d2490" name="Lower" value="1">
+                      <elementDefinition Id="a961e6d8-5f75-493b-94ef-883d806c8259" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="596ef995-6248-4da1-9b35-4d0899d1c59c" name="Upper" value="1">
+                      <elementDefinition Id="31470915-b972-4d2e-b532-fdbf999e5f0f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bb4caae1-f342-44e5-999d-e12c9e7d987c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bd14d01-6cbc-4cf2-ae9e-c3d0f48a959c" name="abstract ManualTimer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="71c8fe7b-269b-4e42-999c-1d49f05bc6fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="12ac9ad8-f7d7-4e12-8ce3-ef13995fd4d5" />
+          </association>
+          <association Id="21eba07f-7567-4a26-8648-6c68604f1e72" isDerived="false" sourceEndRoleName="SendDataManagment" targetEndRoleName="ReceivedData" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4d72cf26-7068-4d9d-93e9-b18c356fa241" LastKnownName="ReceivedData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55861e63-2c27-4598-86de-18e7a740365d" name="SendDataManagment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4cdc7384-62bc-4b0a-8684-9ee94d88eacf" name="Lower" value="1">
+                      <elementDefinition Id="f0ab600e-ea0d-4bb3-9389-7b4598cf052c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f2c4362d-6a1d-49b8-bb74-9d54454fe8ba" name="Upper" value="1">
+                      <elementDefinition Id="6d59ed34-40d1-46f7-abe5-c9431db3dca2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bdbda03b-f574-4275-945e-a4ffdf08e84b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c497bdd8-af0c-45b8-9ea8-79c135e261bd" name="ReceivedData" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa29f102-baeb-4494-b803-b74f13309326" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2f4c2e4d-3f86-477f-b988-fc9c864564ca" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="221fef32-bbcd-4eab-a1d7-f74f86728ac6" name="ConnectToDeviceApi" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ebe7be4a-2506-4407-9483-5e470273efbc" />
+        <targetEnds>
+          <association Id="ddaa2085-8027-4307-ac04-54b164712ed9" isDerived="false" sourceEndRoleName="ConnectToDeviceApi" targetEndRoleName="SendDataManagment" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e583262a-8ad9-422b-b792-b41f33f3153d" LastKnownName="SendDataManagment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78ceb867-2eed-4fcb-95a4-f28b8528610f" name="ConnectToDeviceApi" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5057acdf-c431-43e5-80c1-d65860ff4037" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aca76804-9d30-413b-b0a4-f9723424edbd" name="SendDataManagment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="29d55fc0-46e2-4182-b1a5-a792ce7e9325" name="Lower" value="1">
+                      <elementDefinition Id="09a4b823-2021-4366-9254-0dfbe00621d0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e7be937c-b627-4f21-b459-a8f78dc77739" name="Upper" value="1">
+                      <elementDefinition Id="5744b0fc-b95c-46d6-a602-0173af3668df" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b058d42e-8d14-4c8d-a7a8-ee57de11b757" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da4f33c2-9d58-4abd-9077-5a0be9840959" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0c6e64d7-3715-46f8-88dd-e41b0537c3d3" name="ConnectToDeviceModel">
+    <elementDefinition Id="956bc089-f6a0-485d-9477-ca1e58df6874" />
+  </package>
+</logicalClassDesignerModel>

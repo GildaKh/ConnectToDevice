@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FB63375-9D92-4CA1-8B0E-FAA1CE4AD19B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConnectToDeviceClient</RootNamespace>
+    <AssemblyName>ConnectToDeviceClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.0.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.4.0.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\AOP\AOPRegistration.cs" />
+    <Compile Include="Infrastructure\AOP\DependencyResolver.cs" />
+    <Compile Include="Infrastructure\AOP\LoggingInterceptor.cs" />
+    <Compile Include="Infrastructure\Helper\ConfigUtility.cs" />
+    <Compile Include="Infrastructure\Helper\Enums.cs" />
+    <Compile Include="Infrastructure\Helper\Keys.cs" />
+    <Compile Include="Model\Channel\BaseChannel.cs" />
+    <Compile Include="Model\Channel\NetworkChannel.cs" />
+    <Compile Include="Model\Channel\SerialChannel.cs" />
+    <Compile Include="Model\ExternalObjects\ConnectToDeviceAPI.cs" />
+    <Compile Include="Model\ExternalObjects\ReceivedData.cs" />
+    <Compile Include="Model\ExternalObjects\SendData.cs" />
+    <Compile Include="Model\ExternalObjects\SendDataManagment.cs" />
+    <Compile Include="Model\Interfaces\IChannel.cs" />
+    <Compile Include="Model\Interfaces\IPersonnel.cs" />
+    <Compile Include="Model\Interfaces\IReceivedData.cs" />
+    <Compile Include="Model\TimerMngmt\ManualTimer.cs" />
+    <Compile Include="Model\TimerMngmt\ManualTimerAsync.cs" />
+    <Compile Include="Model\TimerMngmt\ManualTimerSync.cs" />
+    <Compile Include="Model\Types\ILNUMBER.cs" />
+    <Compile Include="Model\Types\ILPASSWORD.cs" />
+    <Compile Include="Model\Types\LLCHAR.cs" />
+    <Compile Include="Model\Types\TypePackager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\Infrastructure.csproj">
+      <Project>{6eb40526-aa62-477a-a217-55f6968acaf4}</Project>
+      <Name>Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
